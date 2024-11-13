@@ -1,0 +1,283 @@
+body{
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.logo img {
+    height: 30px;
+    width: 72px;
+    
+}
+
+.header {
+    /* position: fixed; */
+    position: sticky;
+    top: 0px;
+    right: 0;
+    left: 0;
+
+    align-items: center ;
+}
+
+.header,
+.top{
+    background-color: #1f2937;
+    display: flex;
+    padding: 15px 150px;
+}
+
+.top-cover img {
+    /* height: 300px; */
+    /* width: 50%; */
+    /* width: 100%; */
+    /* float: right; */
+    /* flex: 1; */
+    width: 100%; 
+    float:right
+}
+
+.top-text{
+    /* width: 100%; */
+    flex-grow: 1;
+    flex-basis: 100%;
+
+    width: 20%; 
+    float:left
+}
+
+.main-text {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: bold;
+    /* float: left; */
+}
+
+.secondary-text {
+    width: 45ch;
+    font-size: 18px;
+    color: #efe7eb;
+    /* font-weight: 500; */
+}
+
+ul li a {
+    color: #f9faf8;
+    text-decoration: none;
+    
+}
+ul li {
+    list-style: none;
+    align-items: center;
+    display: flex;
+}
+
+.links{
+    margin-left: auto;
+    display: flex;
+    gap: 35px;
+}
+
+.top {
+    display: flex;
+    /* flex-grow: 1; */
+    gap: 20px;
+    padding-bottom: 80px;
+    margin-top: 0px;
+    /* padding-top: 125px; */
+}
+
+button {
+    color: white;
+    background-color: #3882f6;
+    border-style: none;
+    border-radius: 5px;
+    height: 30px;
+    padding: 2px 16px;
+    margin-top: 15px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #326fd1;
+    
+}
+
+a button{
+    flex-grow: 1;
+    /* background-color: #fff; */
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.watch a {
+    height: 24px;
+}
+
+.watch{
+    display: flex;
+    text-decoration: none;
+    
+}
+
+/* 2nd part cascading starts from here */
+.second-part {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 20px 150px;
+    align-items: center;
+}
+
+.title {
+    font-size: 36px;
+    /* font-weight: bold; */
+    font-weight: 900;
+    color: #1f2937;
+
+    padding-top: 30px;
+    padding-bottom: 42px;
+    
+    align-self: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    justify-content: center;
+    flex-shrink: 1;
+    gap: 30px;
+}
+
+.block img {
+    width: 200px;
+    border: #3882f6 solid ;
+    border-radius: 15px;
+    
+}
+
+.block {
+    width: 200px;
+    
+}
+
+.info-text {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+/* 3rd part cascading starts from here */
+
+.third-part {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    font-style: italic;
+    font-weight: 50;
+    font-size: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 20px 150px;  */
+
+    justify-content: space-around;
+    align-content: center;
+
+    padding: 80px 150px;
+}
+
+.card {
+    padding: 20px;
+    margin: 16px;
+    width: 400px;
+    border: #2b3038 solid;
+    border-radius: 15px;
+
+    
+    /* flex-grow: 1; */ 
+}
+
+.card span {
+    display: flex;
+    font-weight: bold;
+    font-size: 24px;
+    justify-content: flex-end;
+}
+
+/* 4th part cascading starts from here */
+
+.forth-part {
+    margin: 60px 150px;
+    background-color:#3882f6;
+    padding: 40px 90px;
+    color:#f9faf8;
+    display: flex;
+    border-radius: 15px ;
+
+    justify-content: space-between;
+}
+
+.head{
+    font-weight: 800;
+    padding-bottom:12px ;
+}
+
+.text {
+    font-weight: normal;
+}
+.forth-part button {
+    border: #f9faf8 solid 2px;
+    padding: 2px 20px;
+}
+
+.footer{
+    background-color: #1f2937;
+    display: flex;
+
+    color: #f9faf8;
+    justify-content: center;
+    padding: 30px;
+    font-weight: 50;
+    font-style: italic;
+}
+
+
+@media screen and (max-width: 768px) {
+    .forth-part,
+    .third-part,
+    .second-part,
+    .top{
+        /* background-color: black; */
+        flex-direction: column;
+        padding: 15px;
+        /* flex-grow: 1; */
+    }
+    .header
+    {
+        padding: 15px;
+    }
+
+    .second-part{
+        text-align: center;
+    }
+    
+    .top-cover img {
+        width: 100%; 
+        /* float:center; */
+    }
+    
+    .top-text{
+        /* width: 100%; */
+        flex-grow: 1;
+        flex-basis: 100%;
+    
+        width: 100%; 
+        float:left
+    }
+    .forth-part{
+        flex-grow: 1;
+    }
+}
